@@ -1,0 +1,35 @@
+{
+  "out": "runs/lmo-rank-adaptive",
+  "rows": 1024,
+  "cols": 256,
+  "decays": [
+    1.0,
+    1.5
+  ],
+  "ratios": [
+    6,
+    8,
+    12
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "ranks": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "initial_rank": 4,
+  "gamma": 1.0,
+  "sigma": 0.9,
+  "tol": 1e-06,
+  "max_iters": 3000,
+  "repeats": 3,
+  "replot": false,
+  "numpy_version": "2.5.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "OPENBLAS_NUM_THREADS": "1"
+}

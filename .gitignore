@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+data/
+*.egg-info/
+experiments/nanogpt_gpu/data/
+.DS_Store
+experiments/nanogpt_gpu/logs/
+state.eqx
+.pytest_cache/
+*.log
+deprecated/
+figures/

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparrow"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["jax>=0.4.35", "equinox>=0.11.10", "optax>=0.2.4", "numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+plot = ["matplotlib>=3.7"]  # scripts/plot_*.py
+mps = ["jax-mps"]  # experimental Apple-GPU backend; pins its own jaxlib
+
+[tool.setuptools.packages.find]
+include = ["sparrow*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]  # tests import experiments/
